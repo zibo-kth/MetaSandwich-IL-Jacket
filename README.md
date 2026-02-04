@@ -3,7 +3,7 @@
 **SooMa** stands for **(SO)und insertion l(O)ss of (M)ultilayer pipeline j(A)cket**
 
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2018b+-orange.svg)](https://www.mathworks.com/products/matlab.html)
-[![License](https://img.shields.io/badge/License-Open%20Source-blue.svg)](#license)
+[![License](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](#license)
 
 ## Overview
 
@@ -167,7 +167,7 @@ If you use this code in your research, please cite the relevant papers by Zibo L
 
 ## License
 
-This is an open-source project. Please cite the relevant research papers when using this code in academic or commercial applications.
+BSD-3-Clause (see `LICENSE`).
 
 ## Troubleshooting
 

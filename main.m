@@ -241,9 +241,20 @@ fprintf('Average insertion loss: %.1f dB\n\n', mean(Ve_IL));
 %% Compare theoretical predictions with experimental measurements
 %% =======================================================================
 
-% Load experimental validation data
-load('Measured_insertion_loss')
-fprintf('Loaded experimental data for validation\n');
+% Load experimental validation data (case-sensitive safe)
+dataPath = fullfile('data','measured_insertion_loss.mat');
+S = load(dataPath);
+% Try to find the expected struct variable; fall back to the first non-empty field.
+if isfield(S,'Measured_insertion_loss')
+    Measured_insertion_loss = S.Measured_insertion_loss;
+else
+    fns = fieldnames(S);
+    if isempty(fns)
+        error('Measured data MAT file has no variables: %s', dataPath);
+    end
+    Measured_insertion_loss = S.(fns{1});
+end
+fprintf('Loaded experimental data for validation from %s\n', dataPath);
 
 % Create comparison plot
 figure(2);
