@@ -1,5 +1,5 @@
 %% =======================================================================
-%% SooMa: Sound Insertion Loss Analysis for Multilayer Pipeline Jackets
+%% MetaSandwich-IL-Jacket (formerly SooMa): Sound Insertion Loss for Multilayer Pipeline Jackets
 %% =======================================================================
 %% Full Name: (SO)und insertion l(O)ss of (M)ultilayer pipeline j(A)cket
 %% Author: Zibo Liu
@@ -27,7 +27,7 @@ clear all; clc; close all;
 addpath(genpath('./data/'))  % Add data directory to path
 addpath(genpath('./src/'))   % Add source functions to path
 
-fprintf('\n=== SooMa: Multilayer Pipeline Jacket Analysis ===\n');
+fprintf('\n=== MetaSandwich-IL-Jacket: Multilayer Pipeline Jacket Analysis ===\n');
 fprintf('Loading parameters and initializing simulation...\n\n');
 
 
@@ -258,7 +258,7 @@ fprintf('Loaded experimental data for validation from %s\n', dataPath);
 
 % Create comparison plot
 figure(2);
-set(gcf, 'Name', 'SooMa: Insertion Loss Analysis', 'NumberTitle', 'off');
+set(gcf, 'Name', 'MetaSandwich-IL-Jacket: Insertion Loss Analysis', 'NumberTitle', 'off');
 
 % Convert to octave bands for smoother visualization
 Ma = [Ve_freq, Ve_IL];

@@ -7,7 +7,7 @@
 
 ## Overview
 
-SooMa is a MATLAB-based acoustic simulation tool that calculates the **sound insertion loss** of multilayer pipeline jacket systems using the **Transfer Matrix Method**. This tool is designed for acoustic engineers working on pipeline noise control, particularly for industrial applications where sound transmission through pipe walls needs to be minimized.
+MetaSandwich-IL-Jacket is a MATLAB-based acoustic simulation tool that calculates the **sound insertion loss (IL)** of multilayer pipeline jacket systems using the **Transfer Matrix Method**. This tool is designed for acoustic engineers working on pipeline noise control, particularly for industrial applications where sound transmission through pipe walls needs to be minimized.
 
 ### Key Features
 
@@ -38,7 +38,7 @@ The analysis considers a three-layer cylindrical system:
 ## Project Structure
 
 ```
-SooMa/
+MetaSandwich-IL-Jacket/
 ├── README.md                          # This file
 ├── main.m                             # Main simulation script
 ├── data/
@@ -62,7 +62,7 @@ SooMa/
 ### Installation
 
 1. Clone or download this repository
-2. Open MATLAB and navigate to the SooMa directory
+2. Open MATLAB and navigate to the MetaSandwich-IL-Jacket directory
 3. Run the main script:
 
 ```matlab
