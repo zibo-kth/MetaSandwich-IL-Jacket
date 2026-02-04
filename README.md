@@ -1,6 +1,6 @@
-# SooMa: Sound Insertion Loss Analysis for Multilayer Pipeline Jackets
+# MetaSandwich-IL-Jacket (formerly SooMa): Insertion Loss for Multilayer Pipeline Jackets
 
-**SooMa** stands for **(SO)und insertion l(O)ss of (M)ultilayer pipeline j(A)cket**
+(Formerly **SooMa**: (SO)und insertion l(O)ss of (M)ultilayer pipeline j(A)cket.)
 
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2018b+-orange.svg)](https://www.mathworks.com/products/matlab.html)
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](#license)
