@@ -1,4 +1,8 @@
 function savefigure(path_png, path_eps, path_fig, filename)
+%SAVEFIGURE Save current figure in multiple formats.
+%
+% NOTE: This helper existed without a terminating `end`, which can break
+% Octave parsing depending on version/settings.
 
 set(findobj('type','axes'),...
     'ticklength',[0.015,0.037],...
@@ -6,21 +10,19 @@ set(findobj('type','axes'),...
     'ycolor','k',...
     'xminortick','on',...
     'yminortick','on',...
-    'linewidth',1.25)
+    'linewidth',1.25);
 
-
-print(filename,'-dpng','-r800')
+print(filename,'-dpng','-r800');
 filenamepng = strcat(filename, '.png');
-movefile(filenamepng, path_png)
+movefile(filenamepng, path_png);
 
-% print(filename,'-depsc','-r800')
-% filenameeps = strcat(filename, '.eps');
-% movefile(filenameeps, path_eps) 
-
-print(filename,'-depsc')
+print(filename,'-depsc');
 filenameeps = strcat(filename, '.eps');
-movefile(filenameeps, path_eps) 
+movefile(filenameeps, path_eps);
 
-savefig(filename)
+savefig(filename);
 filenamefig = strcat(filename, '.fig');
-movefile(filenamefig, path_fig) 
+movefile(filenamefig, path_fig);
+
+end
+
