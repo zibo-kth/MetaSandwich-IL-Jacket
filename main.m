@@ -1,5 +1,5 @@
 %% =======================================================================
-%% MetaSandwich-IL-Jacket (formerly SooMa): Sound Insertion Loss for Multilayer Pipeline Jackets
+%% MetaSandwich-IL-Jacket: Sound Insertion Loss for Multilayer Pipeline Jackets (legacy script entrypoint)
 %% =======================================================================
 %% Full Name: (SO)und insertion l(O)ss of (M)ultilayer pipeline j(A)cket
 %% Author: Zibo Liu
